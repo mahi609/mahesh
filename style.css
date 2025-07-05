@@ -1,0 +1,97 @@
+*{
+    font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}             
+
+.main_box{
+  background: url(photo.jpg);
+  height: 100vh;
+}
+
+ .main_box .sidebar_menu{
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255,255,255,0.1);
+  position:absolute;
+  box-shadow: 0 0 6px rgba(128,128,128,1);
+  
+  left: -300px;
+  transition: all 0.2s linear;
+}
+.sidebar_menu .logo a{
+  position: absolute;
+  left: 50px;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 30px;
+}
+.sidebar_menu .logo{
+  position:absolute;
+  line-height: 60px;
+  width: 100%;
+  box-shadow: 0 0 6px rgba(128,128,128,0.5);
+}
+.sidebar_menu .menu ul li{
+  line-height: 60px;
+  width: 300px;  
+  
+}
+ .sidebar_menu .menu ul li i{
+  color: aliceblue;
+  position: relative;  
+  margin: 10px;
+
+ }
+ .sidebar_menu .menu ul li a{
+  color: aliceblue;
+  text-decoration: none;
+
+ }
+ .sidebar_menu .social_media{
+   position: absolute;
+   bottom: 100px;
+   left: 50px;
+ }
+  .sidebar_menu .social_media ul a i {
+    color:beige
+  }
+   
+  .btn_one i {
+    font-size: 30px; 
+    position: absolute;
+    left: 10px;
+    top:10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+  }
+  .btn_two i{
+    font-size: 30px;
+    position: absolute;
+    left: 275px;
+    top: 18px;
+    cursor: pointer;
+  }
+  .sidebar_menu .menu{
+    position: absolute;
+    top: 60px;
+  }
+  .sidebar_menu .menu ul li:hover{
+    box-shadow: 0 0 8px gray;
+    width: 100%;
+  }
+  .sidebar_menu .social_media ul a i:hover{
+    font-size: 20px;
+  }
+  #check:checked ~ .sidebar_menu{
+   left: 0px;
+  }
+  
+  .btn_one i:hover{
+    font-size: 40px;
+  }
+   
+  
